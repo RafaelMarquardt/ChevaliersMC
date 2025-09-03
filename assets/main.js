@@ -54,4 +54,43 @@ document.addEventListener("DOMContentLoaded", () => {
     const img = document.querySelector(`#foto${i} img`);
     if (img && src) img.src = src;
   }
+
+// ====== Render: Membros ======
+ const categorias = [
+    { key: "diretoria", grid: "gridDiretoria" },
+    { key: "secretaria", grid: "gridSecretaria" },
+    { key: "gerais", grid: "gridGerais" }
+  ]; 
+
+  // Renderiza cada categoria de membros
+categorias.forEach(cat => {
+    const gridEl = document.getElementById(cat.grid);
+    const lista = cfg.membros?.[cat.key] || [];
+    if (gridEl && lista.length) {
+      gridEl.innerHTML = lista.map(m => `
+        <article class="rounded-xl border border-white/10 bg-white/5 overflow-hidden">
+          <div class="w-full aspect-square bg-black/40">
+            <img src="${m.foto}" alt="${m.nome}" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">${m.nome}</h3>
+            <p class="text-sm text-gray-300">${m.funcao || ""}</p>
+            <p class="text-xs text-gray-400">${m.cidade || ""}</p>
+          </div>
+        </article>
+      `).join("");
+    }
+  });
+
+  // ====== Render: Álbum ======
+  const albumGrid = document.getElementById("albumGrid");
+  if (albumGrid && Array.isArray(cfg.album)) {
+    albumGrid.innerHTML = cfg.album.map((src, i) => `
+      <figure class="rounded-lg border border-white/10 overflow-hidden bg-white/5">
+        <div class="w-full aspect-[4/3] bg-black/40">
+          <img src="${src}" alt="Foto do álbum ${i+1}" class="w-full h-full object-contain">
+        </div>
+      </figure>
+    `).join("");
+  }
 });
