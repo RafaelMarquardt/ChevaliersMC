@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <icon rel="icon" href="src/img/brasão-SF.png" />
+  <icon rel="icon" href="src/img/icone.png" />
   <title>Chevaliers MC – Laranjeiras do Sul/PR</title>
   <meta name="description" content="Chevaliers MC – Laranjeiras do Sul/PR. União, Força e Honra." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="./assets/main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src=".\assets\config.js"></script>
 </head>
 <body class="min-h-screen">
   <!-- Topbar / Nav -->
@@ -18,7 +19,7 @@
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <!-- LOGO: troque o src abaixo pelo arquivo oficial do brasão -->
-        <img src="src/img/brasão-SF.png" alt="Chevaliers MC" class="h-10 w-10 object-contain rounded-sm ring-1 ring-white/10" onerror="this.style.display='none'" />
+        <img src="./assets/img/brasao-SF.png" alt="Chevaliers MC" class="h-10 w-10 object-contain rounded-sm ring-1 ring-white/10" onerror="this.style.display='none'" />
         <div class="leading-tight">
           <div class="font-oswald brand text-lg tracking-wider">CHEVALIERS MC</div>
           <div class="text-xs text-gray-300/80">Laranjeiras do Sul • PR</div>
@@ -30,7 +31,7 @@
         <a href="#galeria" class="hover:text-white/90 text-gray-300">Galeria</a>
         <a href="#eventos" class="hover:text-white/90 text-gray-300">Eventos</a>
         <a href="#contato" class="hover:text-white/90 text-gray-300">Contato</a>
-        <a href="https://wa.me/++554299980448" target="_blank" class="btn-primary rounded-md px-4 py-2 font-medium">WhatsApp</a>
+        <a id="zapLink" target="_blank" class="btn-primary rounded-md px-4 py-2 font-medium">WhatsApp</a>
       </nav>
       <!-- Mobile -->
       <button id="menuBtn" class="md:hidden btn-ghost rounded-md px-3 py-2" aria-label="Abrir menu">Menu</button>
@@ -42,7 +43,7 @@
         <a href="#galeria" class="text-gray-300">Galeria</a>
         <a href="#eventos" class="text-gray-300">Eventos</a>
         <a href="#contato" class="text-gray-300">Contato</a>
-        <a href="wa.me/554299980448" target="_blank" class="btn-primary rounded-md px-4 py-2 w-fit">WhatsApp</a>
+        <a id="zapLink" target="_blank" class="btn-primary rounded-md px-4 py-2 w-fit">WhatsApp</a>
       </div>
     </div>
   </header>
@@ -70,7 +71,7 @@
           <!-- Moldura da logo -->
           <div class="relative p-2 rounded-xl border border-white/10 bg-white/5 shadow-lg">
             <div class="aspect-square w-72 md:w-96 rounded-lg bg-black/60 grid place-items-center ring-1 ring-white/10">
-              <img src="src/img/brasão-SF.png" alt="Brasão Chevaliers" class="h-64 w-64 object-contain" onerror="this.insertAdjacentHTML('afterend','<div class=\'text-center text-sm text-gray-400 p-6\'>Substitua <b>logo-chevaliers.png</b> pelo seu brasão.</div>'); this.remove();" />
+              <img src="./assets/img/brasao-SF.png" alt="Brasão Chevaliers" class="h-64 w-64 object-contain" onerror="this.insertAdjacentHTML('afterend','<div class=\'text-center text-sm text-gray-400 p-6\'></div>'); this.remove();" />
             </div>
           </div>
         </div>
@@ -110,14 +111,30 @@
       </div>
       <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
         <!-- Troque as imagens abaixo por fotos reais -->
-        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10"></div>
-        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10"></div>
-        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10"></div>
-        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10"></div>
-        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10"></div>
-        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10"></div>
-        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10"></div>
-        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10"></div>
+        <div class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10">
+            <img src="/assets/img/galeria/foto1.png" alt="" class="h-full w-full object-contain rounded-lg" /> 
+        </div>
+        <div id="foto2" class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10">
+          <img src="/assets/img/galeria/foto2.png" alt="" class="h-full w-full object-contain rounded-lg" />
+        </div>
+        <div id="foto3" class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10">
+            <img src="/assets/img/galeria/foto3.png" alt="" class="h-full w-full object-contain rounded-lg" />
+        </div>
+        <div id="foto4" class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10">
+            <img src="/assets/img/galeria/foto4.png" alt="" class="h-full w-full object-contain rounded-lg" />
+        </div>
+        <div id="foto5" class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10">
+            <img src="/assets/img/galeria/foto5.png" alt="" class="h-full w-full object-contain rounded-lg" />
+        </div>
+        <div id="foto6" class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10">
+            <img src="/assets/img/galeria/foto6.png" alt="" class="h-full w-full object-contain rounded-lg" />
+        </div>
+        <div id="foto7" class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10">
+            <img src="/assets/img/galeria/foto7.png" alt="" class="h-full w-full object-contain rounded-lg" />
+        </div>
+        <div id="foto8" class="aspect-[4/3] rounded-lg bg-white/5 border border-white/10">
+            <img src="/assets/img/galeria/foto8.png" alt="" class="h-full w-full object-contain rounded-lg" />
+        </div>
       </div>
     </div>
   </section>
@@ -135,7 +152,7 @@
             <p class="mt-2 text-sm text-gray-300">Saída da praça central. Tanque cheio e colete.</p>
           </div>
           <div class="px-6 pb-6">
-            <a href="https://wa.me/+554299980448" target="_blank" class="btn-ghost rounded-md px-4 py-2 inline-block">Confirmar presença</a>
+            <a id="zapLink" target="_blank" class="btn-ghost rounded-md px-4 py-2 inline-block">Confirmar presença</a>
           </div>
         </article>
         <!-- CARD 2 -->
@@ -170,17 +187,17 @@
       <h2 class="font-oswald text-3xl md:text-4xl section-title">Contato</h2>
       <div class="mt-8 grid md:grid-cols-2 gap-10">
         <div class="rounded-xl border border-white/10 p-6 bg-white/5">
-          <h3 class="text-lg font-semibold">Fale com a gente</h3>
+          <h3 class="text-lg font-semibold">Fale com conosco</h3>
           <p class="mt-2 text-gray-300 text-sm">Dúvidas, parcerias ou para rodar com a irmandade.</p>
           <div class="mt-4 grid gap-3">
-            <a href="https://wa.me/+554299980448" target="_blank" class="btn-primary rounded-md px-5 py-3 w-fit">Chamar no WhatsApp</a>
-            <a href="https://instagram.com/SEU_USUARIO" target="_blank" class="btn-ghost rounded-md px-5 py-3 w-fit">Instagram</a>
-            <a href="mailto:contato@chevaliersmc.com.br" class="btn-ghost rounded-md px-5 py-3 w-fit">E‑mail</a>
+            <a id="zapLink" target="_blank" class="btn-primary rounded-md px-5 py-3 w-fit">Chamar no WhatsApp</a>
+            <a id="instaLink" target="_blank" class="btn-ghost rounded-md px-5 py-3 w-fit">Instagram</a>
+            <a id="gmail" class="btn-ghost rounded-md px-5 py-3 w-fit">E‑mail</a>
           </div>
-          <p class="mt-6 text-xs text-gray-400">Endereço (opcional): Rua Exemplo, 123 – Laranjeiras do Sul/PR</p>
+          <p id="end-sede" class="mt-6 text-xs text-gray-400"></p>
         </div>
-
-        <form class="rounded-xl border border-white/10 p-6 bg-white/5 grid gap-4" onsubmit="event.preventDefault(); alert('Mensagem enviada! (exemplo)');">
+        <!--
+        <form class="rounded-xl border border-white/10 p-6 bg-white/5 grid gap-4" onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
           <div>
             <label class="text-sm text-gray-300">Nome</label>
             <input class="mt-1 w-full rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-[var(--ink)]" placeholder="Seu nome" required />
@@ -196,6 +213,7 @@
           <button class="btn-primary rounded-md px-5 py-3 w-fit">Enviar</button>
           <p class="text-xs text-gray-400">* Este formulário é apenas ilustrativo. Integre a um serviço (Formspree, Netlify Forms, etc.) para receber mensagens.</p>
         </form>
+        -->
       </div>
     </div>
   </section>
@@ -205,7 +223,7 @@
     <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
         <div class="h-8 w-8 rounded-sm border border-white/10 bg-white/5">
-          <img src="src/img/brasão-SF.png" alt="Chevaliers MC" class="h-8 w-8 object-contain rounded-sm ring-1 ring-white/10" onerror="this.style.display='none'" />
+          <img src="assets/img/brasao-SF.png" class="h-8 w-8 object-contain rounded-sm ring-1 ring-white/10" onerror="this.style.display='none'" />
         </div>
         <span class="text-sm text-gray-300">Chevaliers MC – Laranjeiras do Sul/PR</span>
       </div>
@@ -213,11 +231,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
-    btn?.addEventListener('click',()=> menu.classList.toggle('hidden'))
-  </script>
+  <script src="./assets/main.js"></script>
 </body>
 </html>
