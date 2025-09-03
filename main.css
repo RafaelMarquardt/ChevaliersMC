@@ -1,0 +1,18 @@
+
+html { scroll-behavior: smooth; }
+
+:root{
+--bg:#0b0b0b;           /* preto quase absoluto */
+--ink:#e2d6b0;          /* bege/dourado do brasão */
+--ink-strong:#d6c386;   /* tom mais forte */
+--muted:#9aa0a6;
+}
+
+body{ background:var(--bg); color:#eee; }
+.brand { color: var(--ink); }
+.badge { border: 2px solid var(--ink); color: var(--ink); }
+.btn-primary{ border:1px solid var(--ink); color:var(--bg); background:var(--ink); }
+.btn-primary:hover{ filter: brightness(0.92); }
+.btn-ghost{ border:1px solid var(--ink); color:var(--ink); background:transparent; }
+.btn-ghost:hover{ background: rgba(214,195,134,.08); }
+.section-title{ letter-spacing:.06em; }

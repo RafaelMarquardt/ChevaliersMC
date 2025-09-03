@@ -3,29 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <icon rel="icon" href="src/img/brasão-SF.png" />
   <title>Chevaliers MC – Laranjeiras do Sul/PR</title>
   <meta name="description" content="Chevaliers MC – Laranjeiras do Sul/PR. União, Força e Honra." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    :root{
-      --bg:#0b0b0b;           /* preto quase absoluto */
-      --ink:#e2d6b0;          /* bege/dourado do brasão */
-      --ink-strong:#d6c386;   /* tom mais forte */
-      --muted:#9aa0a6;
-    }
-    body{ background:var(--bg); color:#eee; }
-    .brand { color: var(--ink); }
-    .badge { border: 2px solid var(--ink); color: var(--ink); }
-    .btn-primary{ border:1px solid var(--ink); color:var(--bg); background:var(--ink); }
-    .btn-primary:hover{ filter: brightness(0.92); }
-    .btn-ghost{ border:1px solid var(--ink); color:var(--ink); background:transparent; }
-    .btn-ghost:hover{ background: rgba(214,195,134,.08); }
-    .section-title{ letter-spacing:.06em; }
-  </style>
 </head>
 <body class="min-h-screen">
   <!-- Topbar / Nav -->
@@ -33,7 +18,7 @@
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <!-- LOGO: troque o src abaixo pelo arquivo oficial do brasão -->
-        <img src="logo-chevaliers.png" alt="Chevaliers MC" class="h-10 w-10 object-contain rounded-sm ring-1 ring-white/10" onerror="this.style.display='none'" />
+        <img src="src/img/brasão-SF.png" alt="Chevaliers MC" class="h-10 w-10 object-contain rounded-sm ring-1 ring-white/10" onerror="this.style.display='none'" />
         <div class="leading-tight">
           <div class="font-oswald brand text-lg tracking-wider">CHEVALIERS MC</div>
           <div class="text-xs text-gray-300/80">Laranjeiras do Sul • PR</div>
@@ -45,7 +30,7 @@
         <a href="#galeria" class="hover:text-white/90 text-gray-300">Galeria</a>
         <a href="#eventos" class="hover:text-white/90 text-gray-300">Eventos</a>
         <a href="#contato" class="hover:text-white/90 text-gray-300">Contato</a>
-        <a href="https://wa.me/55XXXXXXXXXX" target="_blank" class="btn-primary rounded-md px-4 py-2 font-medium">WhatsApp</a>
+        <a href="https://wa.me/++554299980448" target="_blank" class="btn-primary rounded-md px-4 py-2 font-medium">WhatsApp</a>
       </nav>
       <!-- Mobile -->
       <button id="menuBtn" class="md:hidden btn-ghost rounded-md px-3 py-2" aria-label="Abrir menu">Menu</button>
@@ -57,7 +42,7 @@
         <a href="#galeria" class="text-gray-300">Galeria</a>
         <a href="#eventos" class="text-gray-300">Eventos</a>
         <a href="#contato" class="text-gray-300">Contato</a>
-        <a href="https://wa.me/55XXXXXXXXXX" target="_blank" class="btn-primary rounded-md px-4 py-2 w-fit">WhatsApp</a>
+        <a href="wa.me/554299980448" target="_blank" class="btn-primary rounded-md px-4 py-2 w-fit">WhatsApp</a>
       </div>
     </div>
   </header>
@@ -77,7 +62,7 @@
           </h1>
           <p class="mt-4 text-gray-300/90 max-w-prose">Chevaliers MC – Irmandade que vive a estrada, com respeito e lealdade. Rodamos por paixão e cultivamos a amizade sobre duas rodas.</p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="https://wa.me/55XXXXXXXXXX" target="_blank" class="btn-primary rounded-md px-6 py-3 font-medium">Entrar em contato</a>
+            <a href="https://wa.me/+5542999980448" target="_blank" class="btn-primary rounded-md px-6 py-3 font-medium">Entrar em contato</a>
             <a href="#sobre" class="btn-ghost rounded-md px-6 py-3 font-medium">Saiba mais</a>
           </div>
         </div>
@@ -85,7 +70,7 @@
           <!-- Moldura da logo -->
           <div class="relative p-2 rounded-xl border border-white/10 bg-white/5 shadow-lg">
             <div class="aspect-square w-72 md:w-96 rounded-lg bg-black/60 grid place-items-center ring-1 ring-white/10">
-              <img src="logo-chevaliers.png" alt="Brasão Chevaliers" class="h-64 w-64 object-contain" onerror="this.insertAdjacentHTML('afterend','<div class=\'text-center text-sm text-gray-400 p-6\'>Substitua <b>logo-chevaliers.png</b> pelo seu brasão.</div>'); this.remove();" />
+              <img src="src/img/brasão-SF.png" alt="Brasão Chevaliers" class="h-64 w-64 object-contain" onerror="this.insertAdjacentHTML('afterend','<div class=\'text-center text-sm text-gray-400 p-6\'>Substitua <b>logo-chevaliers.png</b> pelo seu brasão.</div>'); this.remove();" />
             </div>
           </div>
         </div>
@@ -150,7 +135,7 @@
             <p class="mt-2 text-sm text-gray-300">Saída da praça central. Tanque cheio e colete.</p>
           </div>
           <div class="px-6 pb-6">
-            <a href="https://wa.me/55XXXXXXXXXX" target="_blank" class="btn-ghost rounded-md px-4 py-2 inline-block">Confirmar presença</a>
+            <a href="https://wa.me/+554299980448" target="_blank" class="btn-ghost rounded-md px-4 py-2 inline-block">Confirmar presença</a>
           </div>
         </article>
         <!-- CARD 2 -->
@@ -188,7 +173,7 @@
           <h3 class="text-lg font-semibold">Fale com a gente</h3>
           <p class="mt-2 text-gray-300 text-sm">Dúvidas, parcerias ou para rodar com a irmandade.</p>
           <div class="mt-4 grid gap-3">
-            <a href="https://wa.me/55XXXXXXXXXX" target="_blank" class="btn-primary rounded-md px-5 py-3 w-fit">Chamar no WhatsApp</a>
+            <a href="https://wa.me/+554299980448" target="_blank" class="btn-primary rounded-md px-5 py-3 w-fit">Chamar no WhatsApp</a>
             <a href="https://instagram.com/SEU_USUARIO" target="_blank" class="btn-ghost rounded-md px-5 py-3 w-fit">Instagram</a>
             <a href="mailto:contato@chevaliersmc.com.br" class="btn-ghost rounded-md px-5 py-3 w-fit">E‑mail</a>
           </div>
@@ -219,7 +204,9 @@
   <footer class="border-t border-white/5">
     <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <div class="h-8 w-8 rounded-sm border border-white/10 bg-white/5"></div>
+        <div class="h-8 w-8 rounded-sm border border-white/10 bg-white/5">
+          <img src="src/img/brasão-SF.png" alt="Chevaliers MC" class="h-8 w-8 object-contain rounded-sm ring-1 ring-white/10" onerror="this.style.display='none'" />
+        </div>
         <span class="text-sm text-gray-300">Chevaliers MC – Laranjeiras do Sul/PR</span>
       </div>
       <div class="text-xs text-gray-400">© <span id="year"></span> União, Força e Honra.</div>
