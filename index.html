@@ -21,7 +21,6 @@ Toda alteração de imagem, texto ou link deve ser feita no arquivo config.js de
   <link rel="stylesheet" href="./assets/main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="assets\config.js"></script>
 </head>
 <body class="min-h-screen">
   <!-- Topbar / Nav -->
@@ -119,7 +118,6 @@ Toda alteração de imagem, texto ou link deve ser feita no arquivo config.js de
     <div class="mx-auto max-w-6xl px-4">
       <div class="flex items-end justify-between gap-4">
         <h2 class="font-oswald text-3xl md:text-4xl section-title">Galeria</h2>
-        <a href="#contato" class="text-sm text-gray-300 hover:text-white/90">Quer aparecer aqui? Envie suas fotos →</a>
       </div>
       <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
         <!-- Troque as imagens abaixo por fotos reais -->
@@ -155,47 +153,14 @@ Toda alteração de imagem, texto ou link deve ser feita no arquivo config.js de
   <section id="eventos" class="py-16 md:py-20 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-4">
       <h2 class="font-oswald text-3xl md:text-4xl section-title">Eventos</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <!-- CARD 1 -->
-        <article class="rounded-xl border border-white/10 bg-white/5 overflow-hidden">
-          <div class="p-6">
-            <div class="text-xs tracking-wider brand">SÁB • 19:30</div>
-            <h3 class="mt-1 text-xl font-semibold">Rolê Noturno – Centro → Interior</h3>
-            <p class="mt-2 text-sm text-gray-300">Saída da praça central. Tanque cheio e colete.</p>
-          </div>
-          <div class="px-6 pb-6">
-            <a target="_blank" class="zapLink btn-ghost rounded-md px-4 py-2 inline-block">Confirmar presença</a>
-          </div>
-        </article>
-        <!-- CARD 2 -->
-        <article class="rounded-xl border border-white/10 bg-white/5 overflow-hidden">
-          <div class="p-6">
-            <div class="text-xs tracking-wider brand">DOM • 09:00</div>
-            <h3 class="mt-1 text-xl font-semibold">Café dos Chevaliers – Sede</h3>
-            <p class="mt-2 text-sm text-gray-300">Encontro de integração e planejamento de viagens.</p>
-          </div>
-          <div class="px-6 pb-6">
-            <a href="#contato" class="btn-ghost rounded-md px-4 py-2 inline-block">Ver detalhes</a>
-          </div>
-        </article>
-        <!-- CARD 3 -->
-        <article class="rounded-xl border border-white/10 bg-white/5 overflow-hidden">
-          <div class="p-6">
-            <div class="text-xs tracking-wider brand">EM BREVE</div>
-            <h3 class="mt-1 text-xl font-semibold">Ação Solidária – Campanha do Agasalho</h3>
-            <p class="mt-2 text-sm text-gray-300">Arrecadação e entrega de agasalhos para famílias da região.</p>
-          </div>
-          <div class="px-6 pb-6">
-            <a href="#contato" class="btn-ghost rounded-md px-4 py-2 inline-block">Quero ajudar</a>
-          </div>
-        </article>
-      </div>
+      <div id="eventosGrid" class="mt-8 grid md:grid-cols-3 gap-6"></div> <!-- CARD -->
+    
     </div>
   </section>
 
-<!--
 
-<!-- MEMBROS -
+
+<!-- MEMBROS --
   <section id="membros" class="py-16 md:py-20 border-t border-white/5">
   <div class="mx-auto max-w-6xl px-4">
     <div class="flex items-end justify-between gap-4">
@@ -287,6 +252,7 @@ Toda alteração de imagem, texto ou link deve ser feita no arquivo config.js de
     </div>
   </footer>
 
-  <script src="./assets/main.js"></script>
+  <script src="./assets/js/config.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
